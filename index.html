@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Store</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -16,24 +16,124 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Archivo:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="container">
-      <load ="src/Header/header.html" />
-      <load ="partials/hero.html" />
-      <load ="partials/block.html" />
-      <load ="partials/about-us.html" />
-      <load ="partials/our-courses.html" />
-      <load ="partials/our-mentors.html" />
-      <load ="partials/sign-up.html" />
-      <load ="partials/reviews.html" />
-      <load ="partials/footer.html" />
-      <load ="partials/modal.html" />
-    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <nav class="header-nav">
+            <a class="header-logo" href="/">
+              <svg width="28" height="28">
+                <use href="./icon/headerLogo.svg"></use>
+              </svg>
+              code.store
+            </a>
+            <ul class="header-nav-list">
+              <li>
+                <a class="header-nav-link" href="#">Accueil</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="#">Reassurance</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="#">Proposition</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="#">Comment ça Marche</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="#">Stratégiques</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="#">Tarifs</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-button">
+            <button class="header-button-style">Je veux une démo !</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-general-div">
+            <div class="hero-description">
+              <p class="hero-text-1">
+                “Le code ne ment jamais. Avec RETRO, un pool d’agents IA extrait
+                la vérité de votre legacy pour donner la vision complète de
+                votre SI et sécuriser vos budgets de migration.”
+              </p>
+              <h1 class="hero-title">
+                <span class="hero-span">Rétro-documentation IA: </span>Dominez
+                votre Legacy et votre Dette Technique en 1 semaine
+              </h1>
+              <p class="hero-text-2">
+                Sécurisez vos
+                <span class="hero-text-bold">migrations, audits M&A</span> et
+                <span class="hero-text-bold">RFP</span> avec la
+                <span class="hero-text-bold">rétro-documentation</span>
+                automatisée.
+              </p>
+              <p class="hero-text-2">
+                Avec
+                <span class="hero-text-bold">10+ agents IA spécialisés</span> et
+                l'expertise de
+                <span class="hero-text-bold">nos architectes seniors,</span>
+                transformez votre code complexe en une documentation technique
+                et fonctionnelle fiable en seulement 7 jours
+              </p>
+              <div class="hero-button">
+                <button class="hero-button-style">Je prends RDV !</button>
+              </div>
+            </div>
+            <div class="hero-video">
+              <a href="#">
+                <img src="/img/videoFon.webp" alt="" />
+                <div class="hero-video-div">
+                  <svg class="hero-video-icon" width="28" height="28">
+                    <use href="./icon/play.svg"></use>
+                  </svg></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div></div>
+      </section>
+    </main>
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-title-div">
+          <a class="footer-logo" href="/">
+            <svg class="footer-logo-fill" width="28" height="28">
+              <use href="./icon/footerLogo.svg"></use>
+            </svg>
+            code.store
+          </a>
+          <h3 class="footer-title">
+            Ne laissez pas votre dette technique décider de votre futur.
+          </h3>
+          <button class="footer-button-style">
+            Prenons un e-café avec Maxime & Bertrand
+          </button>
+        </div>
+        <div class="footer-line"></div>
 
-    <script type="module" src="/main.js"></script>
+        <div class="footer-description">
+          <p class="footer-end">© 2026 code.store - Tous droits réservés</p>
+          <p class="footer-end">
+            SAS au capital de 11 109,00 € | SIREN : 878 688 324 | RCS Paris |
+            TVA : FR65878688324
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- <script type="module" src="/main.js"></script> -->
   </body>
 </html>
