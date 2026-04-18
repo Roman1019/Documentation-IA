@@ -1,0 +1,60 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.feedback-section {
+  padding-top: 50px;
+}
+
+.feedback-list {
+  display: flex;
+  gap: 48px;
+}
+
+.feedback-item {
+}
+
+.feedback-title {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-bottom: 32px;
+  width: 592px;
+}
+
+.feedback-generaldiv {
+  display: flex;
+  gap: 20px;
+}
+.feedback-div-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-name {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.feedback-position {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}

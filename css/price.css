@@ -20,7 +20,7 @@
 }
 
 .price-item {
-  border: 1px solid black;
+  border: 1px solid;
   border-radius: 16px;
   padding: 32px;
   display: flex;
@@ -60,25 +60,44 @@
 }
 
 .price-list-service {
-  border-color: black;
+  max-width: 361px;
   height: 331px;
 }
 .price-item-service {
   position: relative;
   padding-left: 20px;
   margin-bottom: 12px;
+  font-family: Archivo;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0;
 }
 
 .price-item-service::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 6px;
+  top: 10px;
   width: 5px;
   height: 5px;
   border-radius: 50%;
 }
-.price-circles-pink::before {
+
+.price-circles-first::before {
+  background-color: #ff0066;
+}
+.price-circles-second {
+  color: #ffffff;
+}
+.price-circles-second::before {
+  background-color: #262525;
+}
+
+.price-circles-thirth {
+  color: #ffffff;
+}
+.price-circles-thirth::before {
   background-color: #ff0066;
 }
 
@@ -97,6 +116,30 @@
   margin-top: auto;
 }
 
-.price-border-pink {
+.price-border-first {
   border: 1px solid #ff0066;
+}
+
+.price-bg-second {
+  background-color: #ff0066;
+  border: none;
+}
+
+.price-bg-thirth {
+  background-color: #262525;
+  border: none;
+}
+
+.price-white {
+  color: #ffffff;
+}
+.price-description-second {
+  color: #ffffffcc;
+}
+
+.price-description-thirth {
+  color: #ffffff80;
+}
+.price-button-second {
+  background-color: #262525;
 }
