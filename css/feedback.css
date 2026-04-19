@@ -16,8 +16,8 @@
 }
 
 .feedback-list {
-  display: flex;
-  gap: 48px;
+  gap: 30px;
+  margin-bottom: 48px;
 }
 
 .feedback-item {
@@ -57,4 +57,43 @@
   line-height: 1.5;
   letter-spacing: 0;
   text-transform: uppercase;
+}
+
+.feedback-arrow-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback-arrow-div {
+  position: relative;
+  z-index: 10;
+}
+
+.feedback-arrow-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #262525;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.feedback-arrow-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  transform: rotate(180deg);
+}
+
+.feedback-arrow-svg-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
 }

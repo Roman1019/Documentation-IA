@@ -19,6 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Archivo:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -106,53 +110,79 @@
       <section class="feedback-section">
         <div class="container">
           <h2 class="visually-hidden">Feedback</h2>
-          <ul class="feedback-list">
-            <li class="feedback-item">
-              <h3 class="feedback-title">
-                “Le code ne ment jamais. Avec RETRO, un pool d’agent IA extrait
-                la vérité de votre legacy pour en faire la mémoire vive de votre
-                SI et sécuriser vos budgets de migration.”
-              </h3>
-              <div class="feedback-generaldiv">
-                <svg width="56" height="56">
-                  <use href="./icon/feedback1.svg"></use>
-                </svg>
-                <div class="feedback-div-name">
-                  <h4 class="feedback-name">Maxime</h4>
-                  <p class="feedback-position">ceo</p>
+          <div class="swiper feedback-swiper">
+            <ul class="feedback-list swiper-wrapper">
+              <li class="feedback-item swiper-slide">
+                <h3 class="feedback-title">
+                  “Le code ne ment jamais. Avec RETRO, un pool d’agent IA
+                  extrait la vérité de votre legacy pour en faire la mémoire
+                  vive de votre SI et sécuriser vos budgets de migration.”
+                </h3>
+                <div class="feedback-generaldiv">
+                  <svg width="56" height="56">
+                    <use href="./icon/feedback1.svg"></use>
+                  </svg>
+                  <div class="feedback-div-name">
+                    <h4 class="feedback-name">Maxime</h4>
+                    <p class="feedback-position">ceo</p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="feedback-item">
-              <h3 class="feedback-title">
-                “Le code ne ment jamais. Avec RETRO, un pool d’agent IA extrait
-                la vérité de votre legacy pour en faire la mémoire vive de votre
-                SI et sécuriser vos budgets de migration.”
-              </h3>
-              <svg width="56" height="56">
-                <use href="./icon/feedback1.svg"></use>
+              </li>
+              <li class="feedback-item swiper-slide">
+                <h3 class="feedback-title">
+                  “Votre legacy est comme une recette de famille dont on a
+                  oublié les ingrédients : on en connaît le goût, mais on ne
+                  sait plus la reproduire. RETRO retrouve la recette exacte de
+                  votre code avec nos agents IA, pour vous permettre de
+                  reconstruire, sécuriser et faire évoluer votre produit sans
+                  jamais le dénaturer.”
+                </h3>
+                <div class="feedback-generaldiv">
+                  <svg width="56" height="56">
+                    <use href="./icon/feedback2.svg"></use>
+                  </svg>
+                  <div class="feedback-div-name">
+                    <h4 class="feedback-name">Bertrand</h4>
+                    <p class="feedback-position">Co-fondateur</p>
+                  </div>
+                </div>
+              </li>
+              <li class="feedback-item swiper-slide">
+                <h3 class="feedback-title">
+                  “One does not simply walk into agentic AI. Code.store nous a
+                  rassemblé pour transformer votre dette technique en une force
+                  alliée, à disposition.”
+                </h3>
+                <div class="feedback-generaldiv">
+                  <svg width="56" height="56">
+                    <use href="./icon/feedback1.svg"></use>
+                  </svg>
+                  <div class="feedback-div-name">
+                    <h4 class="feedback-name">Maxime</h4>
+                    <p class="feedback-position">ceo</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="feedback-arrow-div">
+            <button class="feedback-arrow-button prev">
+              <svg class="feedback-arrow-svg" width="56" height="56">
+                <use href="./icon/arrow.svg"></use>
               </svg>
-              <h4 class="feedback-name">Maxime</h4>
-              <p class="feedback-position">CEO</p>
-            </li>
-            <li class="feedback-item">
-              <h3 class="feedback-title">
-                “Le code ne ment jamais. Avec RETRO, un pool d’agent IA extrait
-                la vérité de votre legacy pour en faire la mémoire vive de votre
-                SI et sécuriser vos budgets de migration.”
-              </h3>
-              <svg width="56" height="56">
-                <use href="./icon/feedback1.svg"></use>
+            </button>
+            <button class="feedback-arrow-button next">
+              <svg class="feedback-arrow-svg-2" width="56" height="56">
+                <use href="./icon/arrow.svg"></use>
               </svg>
-              <h4 class="feedback-name">Maxime</h4>
-              <p class="feedback-position">CEO</p>
-            </li>
-          </ul>
+            </button>
+          </div>
         </div>
       </section>
       <section class="price-section">
         <div class="container">
           <h2 class="price-title">Tableau de prix par Ligne de Code (LDC)</h2>
+
           <ul class="price-list">
             <li class="price-item price-border-first">
               <h3 class="price-title-item">Standard</h3>
@@ -263,6 +293,7 @@
         </div>
       </div>
     </footer>
-    <!-- <script type="module" src="/main.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
