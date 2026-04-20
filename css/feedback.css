@@ -67,6 +67,7 @@
 .feedback-arrow-div {
   position: relative;
   z-index: 10;
+  padding-bottom: 50px;
 }
 
 .feedback-arrow-button {
@@ -79,6 +80,10 @@
   border-radius: 50%;
   background: transparent;
   cursor: pointer;
+}
+
+.feedback-arrow-button:hover {
+  background-color: #ccc;
 }
 
 .feedback-arrow-svg {
@@ -96,4 +101,34 @@
   align-items: center;
   width: 24px;
   height: 24px;
+}
+
+.feedback-pagination {
+  display: flex;
+  gap: 8px;
+}
+
+/* стандартні крапки swiper */
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+/* активна */
+.swiper-pagination-bullet-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff0066;
+}
+.swiper-pagination-bullets-dynamic {
+  overflow: visible;
+}
+.swiper-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  transform: translateY(40%);
 }

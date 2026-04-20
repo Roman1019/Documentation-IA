@@ -5,6 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
@@ -18,10 +22,6 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Archivo:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -163,6 +163,22 @@
                   </div>
                 </div>
               </li>
+              <li class="feedback-item swiper-slide">
+                <h3 class="feedback-title">
+                  “One does not simply walk into agentic AI. Code.store nous a
+                  rassemblé pour transformer votre dette technique en une force
+                  alliée, à disposition.”
+                </h3>
+                <div class="feedback-generaldiv">
+                  <svg width="56" height="56">
+                    <use href="./icon/feedback1.svg"></use>
+                  </svg>
+                  <div class="feedback-div-name">
+                    <h4 class="feedback-name">Maxime</h4>
+                    <p class="feedback-position">ceo</p>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="feedback-arrow-div">
@@ -171,6 +187,7 @@
                 <use href="./icon/arrow.svg"></use>
               </svg>
             </button>
+            <div class="feedback-pagination"></div>
             <button class="feedback-arrow-button next">
               <svg class="feedback-arrow-svg-2" width="56" height="56">
                 <use href="./icon/arrow.svg"></use>
@@ -179,10 +196,37 @@
           </div>
         </div>
       </section>
+      <section class="solution-section">
+        <div class="container">
+          <h2 class="solution-title">
+            Réduire votre dette technique avec la rétro-documentation
+          </h2>
+          <p class="solution-description-1">
+            L'absence de documentation est un risque structurel : turnover,
+            explosion des coûts, audits complexes.
+          </p>
+          <p class="solution-description-2">
+            Transformez vos “bombes à retardement” en actifs maîtrisés grâce à
+            l’IA.
+          </p>
+          <ul class="solution-list">
+            <li class="solution-item">
+              <div class="solution-number-comment">
+                <p class="solution-number">1</p>
+                <p class="solution-comment">Jusqu’à 1.5M lignes</p>
+              </div>
+              <h3 class="solution-item-title">Audit de code legacy à 360°</h3>
+              <p class="solution-item-text">
+                Analyse profonde et rétro-documentation jusqu'à 1,5 millions de
+                lignes de code, même sur des anciens serveurs.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="price-section">
         <div class="container">
           <h2 class="price-title">Tableau de prix par Ligne de Code (LDC)</h2>
-
           <ul class="price-list">
             <li class="price-item price-border-first">
               <h3 class="price-title-item">Standard</h3>

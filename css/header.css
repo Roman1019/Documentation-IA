@@ -73,10 +73,15 @@
   text-align: center;
   background-color: #ff0066;
   color: #ffffff;
-  /* width: 180px;
-  height: 53px; */
   opacity: 1;
   padding: 16px 24px;
   border-radius: 8px;
-  border: none;
+  border: 1px solid #ff0066;
+  transition: all 0.4s ease;
+}
+.header-button-style:hover {
+  color: #ff0066;
+  background-color: #ffffff;
+  border: 1px solid #ff0066;
+  transition: all 0.3s ease;
 }

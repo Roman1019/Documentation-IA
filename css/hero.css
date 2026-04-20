@@ -67,7 +67,15 @@
   opacity: 1;
   padding: 16px 32px;
   border-radius: 8px;
-  border: none;
+  border: 1px solid #ff0066;
+  transition: all 0.3s ease;
+}
+
+.hero-button-style:hover {
+  color: #ff0066;
+  background-color: #ffffff;
+  border: 1px solid #ff0066;
+  transition: all 0.3s ease;
 }
 
 .hero-video {

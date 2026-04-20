@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
       nextEl: ".next",
       prevEl: ".prev",
     },
+    pagination: {
+      el: ".feedback-pagination",
+      clickable: true, // щоб можна було клікати по крапочках
+      dynamicBullets: true,
+    },
 
     // Адаптив
     breakpoints: {
@@ -16,7 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 2,
       },
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
       },
     },
 
