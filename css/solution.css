@@ -10,6 +10,9 @@
   letter-spacing: 0;
   text-align: center;
   padding-top: 50px;
+  max-width: 598px;
+  margin: 0 auto;
+  margin-bottom: 16px;
 }
 
 .solution-description-1 {
@@ -19,6 +22,9 @@
   line-height: 1.5;
   letter-spacing: 0;
   text-align: center;
+  max-width: 728px;
+  margin: 0 auto;
+  margin-bottom: 16px;
 }
 
 .solution-description-2 {
@@ -29,19 +35,33 @@
   letter-spacing: 0;
   text-align: center;
   color: #ff0066;
+  margin-bottom: 40px;
+}
+
+.solution-description-2-white {
+  color: #ffffff;
 }
 
 .solution-list {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-bottom: 50px;
 }
 
 .solution-item {
+  position: relative;
+  overflow: hidden;
   background-color: #262525;
   border-radius: 16px;
   padding: 32px;
-  max-width: 640px;
+  width: 640px;
+}
+
+.solution-item-bg-3 {
+  background-color: #ff0066;
 }
 
 .solution-number-comment {
@@ -67,6 +87,10 @@
   letter-spacing: 0;
   color: #aaaaaa;
 }
+
+.solution-comment-color-3 {
+  color: #ffffff;
+}
 .solution-item-title {
   font-family: Archivo;
   font-weight: 700;
@@ -84,4 +108,24 @@
   letter-spacing: 0;
   color: #ffffff;
   max-width: 470px;
+  height: 102px;
+}
+
+.solution-icon-div {
+  position: absolute;
+  top: 36px;
+  right: 16px;
+  z-index: 1;
+}
+
+.solution-icon {
+  fill: #353535;
+  width: 262px;
+  height: 236px;
+}
+.solution-number-comment,
+.solution-item-title,
+.solution-item-text {
+  position: relative;
+  z-index: 2;
 }

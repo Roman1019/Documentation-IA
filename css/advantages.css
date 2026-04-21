@@ -1,0 +1,88 @@
+.advantages-section {
+  padding: 50px 0px;
+  background-color: #f6f6f6;
+}
+
+.advantage-container {
+  padding: 0px 36px;
+}
+
+.advantages-title {
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.advantages-title-span {
+  color: #ff0066;
+}
+
+.advantage-general-div {
+  display: flex;
+  gap: 80px;
+  max-width: 1241px;
+}
+
+.advantage-description-div {
+  width: 672px;
+}
+
+.advantage-button-accordion {
+  all: unset;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-bottom: 24px;
+  width: 608px;
+  padding: 16px 32px;
+}
+
+.advantages-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-family: Archivo;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+  width: 608px;
+  padding: 0px 32px;
+}
+.advantages-accordion-item {
+  position: relative;
+  padding-left: 20px;
+}
+.line {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 2px;
+  height: 40px; /* стартова маленька */
+  background-color: #ccc;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.advantages-accordion-item.active .line {
+  background-color: #ff0066;
+  height: 120px;
+}
+.advantages-accordion-item.active .advantages-accordion-content {
+  max-height: 200px;
+}
+
+.advantage-img-div {
+}
+
+.advantage-img {
+  width: 489px;
+}
