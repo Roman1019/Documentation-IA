@@ -42,7 +42,7 @@
   letter-spacing: 0;
   margin-bottom: 24px;
   width: 608px;
-  padding: 16px 32px;
+  padding: 0px 32px;
 }
 
 .advantages-accordion-content {
@@ -60,21 +60,22 @@
 }
 .advantages-accordion-item {
   position: relative;
-  padding-left: 20px;
+  padding: 16px 32px;
+  margin-bottom: 24px;
 }
 .line {
   position: absolute;
   left: 0;
-  top: 30px;
+  top: 1px;
   width: 2px;
-  height: 40px; /* стартова маленька */
+  height: 100px;
   background-color: #ccc;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
 .advantages-accordion-item.active .line {
   background-color: #ff0066;
-  height: 120px;
+  height: 150px;
 }
 .advantages-accordion-item.active .advantages-accordion-content {
   max-height: 200px;
@@ -85,4 +86,29 @@
 
 .advantage-img {
   width: 489px;
+}
+
+.advantage-button-style {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0;
+  text-align: center;
+  background-color: #ff0066;
+  color: #ffffff;
+  /* width: 180px;
+  height: 53px; */
+  opacity: 1;
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: 1px solid #ff0066;
+  transition: all 0.3s ease;
+  margin-top: 26px;
+}
+
+.advantage-button-style:hover {
+  color: #ff0066;
+  background-color: #ffffff;
+  border: 1px solid #ff0066;
+  transition: all 0.3s ease;
 }

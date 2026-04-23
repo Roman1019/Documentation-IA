@@ -1,0 +1,29 @@
+.questions-section {
+  padding-top: 50px;
+}
+
+.questions-title {
+  margin-bottom: 60px;
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.questions-list {
+}
+
+.questions-item {
+  max-width: 740px;
+}
+
+.questions-item-title {
+  margin-bottom: 32px;
+}
+.questions-item-description {
+}
+
+.questions-arrow {
+}

@@ -42,29 +42,62 @@ document.addEventListener("DOMContentLoaded", () => {
 //     });
 //   });
 // });
+// document.addEventListener("DOMContentLoaded", () => {
+//   const items = document.querySelectorAll(".advantages-accordion-item");
+
+//   items.forEach((item) => {
+//     const header = item.querySelector(".advantages-accordion-header");
+//     const content = item.querySelector(".advantages-accordion-content");
+//     const line = item.querySelector(".line");
+
+//     header.addEventListener("click", () => {
+//       items.forEach((i) => {
+//         i.classList.remove("active");
+
+//         const c = i.querySelector(".advantages-accordion-content");
+//         const l = i.querySelector(".line");
+
+//         c.style.maxHeight = null;
+//         l.style.height = "40px"; // повертаємо маленьку
+//       });
+
+//       item.classList.add("active");
+
+//       content.style.maxHeight = content.scrollHeight + "px";
+//       line.style.height = content.scrollHeight + 40 + "px";
+//     });
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const items = document.querySelectorAll(".advantages-accordion-item");
+
+//   items.forEach((item) => {
+//     const header = item.querySelector(".advantages-accordion-header");
+
+//     header.addEventListener("click", () => {
+//       items.forEach((i) => i.classList.remove("active"));
+//       item.classList.toggle("active");
+//     });
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", () => {
   const items = document.querySelectorAll(".advantages-accordion-item");
 
   items.forEach((item) => {
     const header = item.querySelector(".advantages-accordion-header");
-    const content = item.querySelector(".advantages-accordion-content");
-    const line = item.querySelector(".line");
 
     header.addEventListener("click", () => {
-      items.forEach((i) => {
-        i.classList.remove("active");
+      const isActive = item.classList.contains("active");
 
-        const c = i.querySelector(".advantages-accordion-content");
-        const l = i.querySelector(".line");
+      // закриваємо всі
+      items.forEach((i) => i.classList.remove("active"));
 
-        c.style.maxHeight = null;
-        l.style.height = "40px"; // повертаємо маленьку
-      });
-
-      item.classList.add("active");
-
-      content.style.maxHeight = content.scrollHeight + "px";
-      line.style.height = content.scrollHeight + 40 + "px";
+      // якщо був закритий → відкриваємо
+      if (!isActive) {
+        item.classList.add("active");
+      }
     });
   });
 });
