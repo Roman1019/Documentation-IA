@@ -101,3 +101,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".questions-item");
+
+  items.forEach((item) => {
+    const arrow = item.querySelector(".questions-arrow");
+
+    arrow.addEventListener("click", (e) => {
+      e.stopPropagation();
+
+      const isActive = item.classList.contains("active");
+
+      // закриваємо всі
+      items.forEach((i) => i.classList.remove("active"));
+
+      // якщо був закритий → відкриваємо
+      if (!isActive) {
+        item.classList.add("active");
+      }
+    });
+  });
+});
