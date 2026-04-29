@@ -19,6 +19,12 @@
   gap: 19px;
 }
 
+@media screen and (max-width: 1200px) {
+  .price-list {
+    flex-wrap: wrap;
+  }
+}
+
 .price-item {
   border: 1px solid;
   border-radius: 16px;

@@ -15,6 +15,12 @@
   margin-bottom: 16px;
 }
 
+@media screen and (max-width: 768px) {
+  .solution-title {
+    font-size: 34px;
+  }
+}
+
 .solution-description-1 {
   font-family: Inter;
   font-weight: 400;
@@ -27,6 +33,12 @@
   margin-bottom: 16px;
 }
 
+@media screen and (max-width: 768px) {
+  .solution-description-1 {
+    font-size: 16px;
+  }
+}
+
 .solution-description-2 {
   font-family: Inter;
   font-weight: 700;
@@ -36,6 +48,11 @@
   text-align: center;
   color: #ff0066;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .solution-description-2 {
+    font-size: 16px;
+  }
 }
 
 .solution-description-2-white {
@@ -100,6 +117,15 @@
   color: #ffffff;
   margin-bottom: 16px;
 }
+
+@media screen and (max-width: 768px) {
+  .solution-item-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+}
 .solution-item-text {
   font-family: Inter;
   font-weight: 400;
@@ -109,6 +135,13 @@
   color: #ffffff;
   max-width: 470px;
   height: 102px;
+}
+
+@media screen and (max-width: 768px) {
+  .solution-item-text {
+    font-size: 16px;
+    font-weight: 350;
+  }
 }
 
 .solution-icon-div {

@@ -10,19 +10,22 @@ document.addEventListener("DOMContentLoaded", () => {
     pagination: {
       el: ".feedback-pagination",
       clickable: true,
-      dynamicBullets: true,
+      dynamicBullets: false,
     },
+    loop: false,
 
     breakpoints: {
-      768: {
-        slidesPerView: 2,
+      0: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
       },
       1200: {
         slidesPerView: 2,
-        slidesPerGroup: 2,
+        slidesPerGroup: 1,
       },
     },
-    loop: true,
+    // dynamicBullets: true,
+    // loop: true,
     speed: 600,
   });
 });

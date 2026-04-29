@@ -25,12 +25,12 @@
     />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <div class="header-inner">
           <nav class="header-nav">
             <a class="header-logo" href="/">
-              <svg width="28" height="28">
+              <svg class="header-logo-svg">
                 <use href="./icon/headerLogo.svg"></use>
               </svg>
               code.store
@@ -61,7 +61,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="hero-section">
         <div class="container">
@@ -97,7 +97,7 @@
             </div>
             <div class="hero-video">
               <a href="#">
-                <img src="/img/videoFon.webp" alt="" />
+                <img class="hero-video-bg" src="/img/videoFon.webp" alt="" />
                 <div class="hero-video-div">
                   <svg class="hero-video-icon" width="28" height="28">
                     <use href="./icon/play.svg"></use>
@@ -275,7 +275,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages-section">
+      <!-- <section class="advantages-section">
         <div class="container advantage-container">
           <h2 class="advantages-title">
             Pourquoi choisir
@@ -324,9 +324,11 @@
                   périmètre" lors de la sélection de prestataires.
                 </p>
               </div>
-              <button class="advantage-button-style">
-                Je migre sans stress
-              </button>
+              <div class="advantage-button-div">
+                <button class="advantage-button-style">
+                  Je migre sans stress
+                </button>
+              </div>
             </div>
             <div class="advantage-img-div">
               <img
@@ -337,8 +339,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="questions-section">
+      </section> -->
+      <!-- <section class="questions-section">
         <div class="container">
           <h2 class="questions-title">Questions fréquentes</h2>
           <ul class="questions-list">
@@ -402,10 +404,50 @@
 
               <div class="questions-line"></div>
             </li>
+            <li class="questions-item">
+              <div class="question-item-div">
+                <div class="questions-item-text">
+                  <h3 class="questions-item-title">
+                    Mes données et mon code sont-ils sécurisés ?
+                  </h3>
+                  <p class="questions-item-description questions-content">
+                    Oui. Nous appliquons des standards de sécurité stricts et
+                    proposons des déploiements sécurisés, y compris on-premise
+                    pour les environnements sensibles. Vos données restent
+                    entièrement sous votre contrôle.
+                  </p>
+                </div>
+                <svg class="questions-arrow" width="24" height="16">
+                  <use href="./icon/questions-arrow.svg"></use>
+                </svg>
+              </div>
+
+              <div class="questions-line"></div>
+            </li>
+            <li class="questions-item">
+              <div class="question-item-div">
+                <div class="questions-item-text">
+                  <h3 class="questions-item-title">
+                    À quoi servent concrètement les livrables ?
+                  </h3>
+                  <p class="questions-item-description questions-content">
+                    Oui. Nous appliquons des standards de sécurité stricts et
+                    proposons des déploiements sécurisés, y compris on-premise
+                    pour les environnements sensibles. Vos données restent
+                    entièrement sous votre contrôle.
+                  </p>
+                </div>
+                <svg class="questions-arrow" width="24" height="16">
+                  <use href="./icon/questions-arrow.svg"></use>
+                </svg>
+              </div>
+
+              <div class="questions-line"></div>
+            </li>
           </ul>
         </div>
-      </section>
-      <section class="price-section">
+      </section> -->
+      <!-- <section class="price-section">
         <div class="container">
           <h2 class="price-title">Tableau de prix par Ligne de Code (LDC)</h2>
           <ul class="price-list">
@@ -489,15 +531,13 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer-section">
+    <!-- <footer class="footer-section">
       <div class="container">
         <div class="footer-title-div">
           <a class="footer-logo" href="/">
-            <svg class="footer-logo-fill" width="28" height="28">
-              <use href="./icon/footerLogo.svg"></use>
-            </svg>
+            <img src="./icon/footerLogo.svg" class="footer-logo-fill" />
             code.store
           </a>
           <h3 class="footer-title">
@@ -508,7 +548,6 @@
           </button>
         </div>
         <div class="footer-line"></div>
-
         <div class="footer-description">
           <p class="footer-end">© 2026 code.store - Tous droits réservés</p>
           <p class="footer-end">
@@ -517,7 +556,7 @@
           </p>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./main.js"></script>
   </body>

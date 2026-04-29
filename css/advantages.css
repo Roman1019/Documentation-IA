@@ -27,6 +27,12 @@
   max-width: 1241px;
 }
 
+@media screen and (max-width: 1200px) {
+  .advantage-general-div {
+    flex-direction: column;
+  }
+}
+
 .advantage-description-div {
   width: 672px;
 }
@@ -81,11 +87,18 @@
   max-height: 200px;
 }
 
-.advantage-img-div {
+@media screen and (max-width: 1200px) {
+  .advantage-general-div {
+    flex-direction: column;
+  }
 }
 
-.advantage-img {
-  width: 489px;
+@media screen and (max-width: 1200px) {
+  .advantage-button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .advantage-button-style {
@@ -111,4 +124,16 @@
   background-color: #ffffff;
   border: 1px solid #ff0066;
   transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .advantage-img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.advantage-img {
+  width: 489px;
 }

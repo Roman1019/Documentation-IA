@@ -1,5 +1,6 @@
 .questions-section {
   padding-top: 50px;
+  padding-bottom: 67px;
 }
 
 .questions-title {
@@ -58,4 +59,7 @@
   width: 100%;
   background-color: #aaaaaa;
   margin-bottom: 32px;
+}
+.questions-item:last-child .questions-line::after {
+  margin-bottom: 0;
 }
