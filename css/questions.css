@@ -5,18 +5,12 @@
 
 .questions-title {
   margin-bottom: 60px;
-  font-family: Archivo;
+  font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 100%;
   letter-spacing: 0;
   text-align: center;
-}
-
-.questions-list {
-}
-
-.questions-item {
 }
 
 .question-item-div {
@@ -46,6 +40,12 @@
 .questions-arrow {
   transition: transform 0.3s ease;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .questions-arrow {
+    display: none;
+  }
 }
 
 .questions-item.active .questions-arrow {

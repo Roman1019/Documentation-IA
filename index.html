@@ -25,7 +25,7 @@
     />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <div class="header-inner">
           <nav class="header-nav">
@@ -59,9 +59,38 @@
           <div class="header-button">
             <button class="header-button-style">Je veux une démo !</button>
           </div>
+          <button class="header-menu-btn" id="menuToggle">
+            <img src="./icon/icon-menu.svg" alt="logo" width="20" height="20" />
+          </button>
+          <div class="overlay" id="overlay"></div>
+
+          <div class="header-mobile-menu" id="mobileMenu">
+            <button class="header-menu-close" id="menuClose">
+              <img src="./icon/close.svg" width="20" height="20" alt="" />
+            </button>
+
+            <ul>
+              <li><a class="header-mobile-menu-link" href="#">Accueil</a></li>
+              <li>
+                <a class="header-mobile-menu-link" href="#">Reassurance</a>
+              </li>
+              <li>
+                <a class="header-mobile-menu-link" href="#">Proposition</a>
+              </li>
+              <li>
+                <a class="header-mobile-menu-link" href="#"
+                  >Comment ça Marche</a
+                >
+              </li>
+              <li>
+                <a class="header-mobile-menu-link" href="#">Stratégiques</a>
+              </li>
+              <li><a class="header-mobile-menu-link" href="#">Tarifs</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="hero-section">
         <div class="container">
@@ -259,7 +288,7 @@
           </ul>
         </div>
       </section>
-      <section class="workflow-section">
+      <!-- <section class="workflow-section">
         <div class="container">
           <h2 class="workflow-title">
             Votre rétro-documentation en
@@ -274,8 +303,8 @@
             <button class="workflow-button-style">En savoir plus !</button>
           </div>
         </div>
-      </section>
-      <!-- <section class="advantages-section">
+      </section> -->
+      <section class="advantages-section">
         <div class="container advantage-container">
           <h2 class="advantages-title">
             Pourquoi choisir
@@ -339,8 +368,8 @@
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="questions-section">
+      </section>
+      <section class="questions-section">
         <div class="container">
           <h2 class="questions-title">Questions fréquentes</h2>
           <ul class="questions-list">
@@ -446,8 +475,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="price-section">
+      </section>
+      <section class="price-section">
         <div class="container">
           <h2 class="price-title">Tableau de prix par Ligne de Code (LDC)</h2>
           <ul class="price-list">
@@ -531,9 +560,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer-section">
+    <footer class="footer-section">
       <div class="container">
         <div class="footer-title-div">
           <a class="footer-logo" href="/">
@@ -556,7 +585,7 @@
           </p>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./main.js"></script>
   </body>

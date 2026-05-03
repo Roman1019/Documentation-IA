@@ -105,24 +105,85 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// document.addEventListener("DOMContentLoaded", () => {
+//   const items = document.querySelectorAll(".questions-item");
+
+//   items.forEach((item) => {
+//     const arrow = item.querySelector(".questions-arrow");
+
+//     arrow.addEventListener("click", (e) => {
+//       e.stopPropagation();
+
+//       const isActive = item.classList.contains("active");
+
+//       // закриваємо всі
+//       items.forEach((i) => i.classList.remove("active"));
+
+//       // якщо був закритий → відкриваємо
+//       if (!isActive) {
+//         item.classList.add("active");
+//       }
+//     });
+//   });
+// });
 document.addEventListener("DOMContentLoaded", () => {
   const items = document.querySelectorAll(".questions-item");
 
   items.forEach((item) => {
     const arrow = item.querySelector(".questions-arrow");
+    const title = item.querySelector(".questions-item-title");
 
-    arrow.addEventListener("click", (e) => {
-      e.stopPropagation();
-
+    const toggleItem = () => {
       const isActive = item.classList.contains("active");
 
       // закриваємо всі
       items.forEach((i) => i.classList.remove("active"));
 
-      // якщо був закритий → відкриваємо
+      // відкриваємо поточний
       if (!isActive) {
         item.classList.add("active");
       }
+    };
+
+    // 👉 Десктоп — клік по стрілці
+    arrow.addEventListener("click", (e) => {
+      if (window.innerWidth > 768) {
+        e.stopPropagation();
+        toggleItem();
+      }
     });
+
+    // 👉 Мобілка — клік по заголовку
+    title.addEventListener("click", () => {
+      if (window.innerWidth <= 768) {
+        toggleItem();
+      }
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("menuToggle");
+  const menu = document.getElementById("mobileMenu");
+  const overlay = document.getElementById("overlay");
+  const closeBtn = document.getElementById("menuClose");
+  const links = menu.querySelectorAll("a");
+
+  function openMenu() {
+    menu.classList.add("active");
+    overlay.classList.add("active");
+  }
+
+  function closeMenu() {
+    menu.classList.remove("active");
+    overlay.classList.remove("active");
+  }
+
+  btn.addEventListener("click", openMenu);
+  closeBtn.addEventListener("click", closeMenu);
+  overlay.addEventListener("click", closeMenu);
+
+  // закриття при кліку на пункт меню
+  links.forEach((link) => {
+    link.addEventListener("click", closeMenu);
   });
 });
