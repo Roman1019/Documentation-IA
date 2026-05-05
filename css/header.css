@@ -25,12 +25,12 @@
 
 @media screen and (max-width: 1200px) {
   .header-nav {
-    gap: 5px;
+    gap: 25px;
   }
 }
 
 .header-logo {
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -84,8 +84,7 @@
 
 .header-nav-link {
   display: inline-block;
-  /* padding: 24px 0; */
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.5;
@@ -167,12 +166,6 @@
   }
 }
 
-/* .header-menu-btn img {
-  pointer-events: none;
-}
-.header-menu-btn {
-  background: red;
-} */
 .overlay {
   position: fixed;
   inset: 0;
@@ -193,29 +186,22 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -60%) scale(0.9);
-
   width: 90%;
   max-width: 320px;
   background: white;
   border-radius: 16px;
   padding: 40px 20px;
-
   opacity: 0;
   transition: 0.3s ease;
-
   z-index: 999;
+  pointer-events: none;
+  text-align: center;
 }
 
 .header-mobile-menu.active {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
-}
-
-.header-mobile-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  text-align: center;
+  pointer-events: all;
 }
 
 .header-mobile-menu-link {
